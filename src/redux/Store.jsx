@@ -1,9 +1,18 @@
-import { configureStore } from "@reduxjs/toolkit";
 
-const defaultReducer = (state = {}, action) => state;
+import { configureStore } from "@reduxjs/toolkit";
+import countdownReducer from "../components/CountDown/CountdownSlice";
+import productsReducer from "../components/Products/ProductsSlice";
+import dividerReducer from "../components/Divider/DividerProductsSlice";
+import listProductsReducer from "../components/ListProducts/ListProductsSlice"
+import productCardReducer from "../components/ProductCard/ProductCardSlice";
 
 export const store = configureStore({
-    reducer: {
-        app: defaultReducer
-    },
+  reducer: {
+    countdown: countdownReducer,
+    products: productsReducer,
+    dividerProducts: dividerReducer, 
+    listProducts: listProductsReducer,
+    productCard: productCardReducer,
+
+  },
 });

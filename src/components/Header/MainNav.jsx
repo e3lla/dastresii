@@ -3,7 +3,7 @@ import Image1 from "../../Images/logo.png";
 
 const MainNav = () => {
   return (
-    <div className="navbar 2xl:hidden xl:hidden  lg:hidden md:flex bg-base-100 shadow-sm mt-7 ">
+    <div className="navbar 2xl:hidden xl:hidden z-50  lg:hidden md:flex bg-base-100 shadow-sm lg:mt-7 md:mt-0 sm:mt-0 mt-0 fixed top-0 left-0 right-0">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,24 +42,24 @@ const MainNav = () => {
         </ul>
       </div>
 
-      <div className="navbar-end gap-5">
+      <div className="navbar-end gap-3">
         <a className=" ">
             <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_bgCarrier" strokewidth="0"/>
 
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_tracerCarrier" strokelinecap="round" strokelinejoin="round"/>
 
-<g id="SVGRepo_iconCarrier"> <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M22 22L20 20" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+<g id="SVGRepo_iconCarrier"> <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#292D32" strokewidth="1.5" strokelinecap="round" strokelinejoin="round"/> <path d="M22 22L20 20" stroke="#292D32" strokewidth="1.5" strokelinecap="round" strokelinejoin="round"/> </g>
 
 </svg></a>
        
         <a className="">
-            <svg fill="#ffffff" width="20px" height="20px" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00032">
+            <svg fill="#ffffff" width="20px" height="20px" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" strokewidth="0.00032">
 
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_bgCarrier" strokewidth="0"/>
 
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#6b6b6b" stroke-width="1.7280000000000002">
+<g id="SVGRepo_tracerCarrier" strokelinecap="round" strokelinejoin="round" stroke="#6b6b6b" strokewidth="1.7280000000000002">
 
 <path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/>
 

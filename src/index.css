@@ -1,10 +1,18 @@
 @import "tailwindcss";
+
 @plugin "daisyui";
+@import url('./assets/fonts.css');
+
+html, body {
+  font-family: 'Shabnam', system-ui, sans-serif;
+  direction: rtl; /* برای فارسی */
+}
 
 * {
   direction: rtl;
   text-align: right;
 }
+
 .btn-mine {
   background-color: whitesmoke;
   color: white;
@@ -35,4 +43,21 @@
 }
 .badge-orange{
   background: #FE5F55;
+}
+.fbabg{
+  width: 55px;
+  height: 55px;
+  border-radius:15px ;
+  -webkit-border-radius:15px ;
+  -moz-border-radius:15px ;
+  -ms-border-radius:15px ;
+  -o-border-radius:15px ;
+}
+
+/* Menu hover styling - red text with underline */
+.menu > li > button:hover,
+.menu > li > a:hover {
+  color: #FE5F55;
+  border-bottom: 2px solid #FE5F55;
+  background-color: transparent !important;
 }

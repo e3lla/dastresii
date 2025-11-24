@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 const Header = () => {
   return (
-    <div className="divoneandtwo">
+    <div className="divoneandtwo fixed top-0 w-full z-50 font-shabnam">
       <TopHeader />
       <Menu/>
       {/* پارت دوم */}

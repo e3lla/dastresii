@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Imagesvg from "../../Images/7.svg"
 
 const FAB = () => {
   const [open, setOpen] = useState(false);
@@ -41,26 +42,25 @@ www.dastresi.com
         </div>
 
         {/* Main FAB button */}
-        <button
-          type="button"
-          aria-label="open-fab"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="absolute right-0 bottom-0 btn btn-lg btn-circle btn-secondary shadow-lg"
-          style={{ zIndex: 9999 }}
-        >
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-        </button>
+       <button
+  type="button"
+  aria-label="open-fab"
+  aria-expanded={open}
+  onClick={() => setOpen((v) => !v)}
+  className="absolute fbabg right-0 bottom-0 btn btn-lg btn-circle shadow-lg"
+  style={{ 
+    zIndex: 9999, 
+    backgroundColor: "#3f51b5", 
+    padding: 0,
+  }}
+>
+  <img 
+    src={Imagesvg}
+    alt="chat-logo" 
+    className="w-10 h-10 m-auto" 
+  />
+</button>
+
       </div>
     </div>
   );

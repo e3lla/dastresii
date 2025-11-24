@@ -3,7 +3,7 @@ import Image1 from "../../Images/logo.png";
 
 const TopHeader = () => {
   return (
-    <div className="hidden lg:flex w-full h-[90px] items-center">
+    <div className="hidden lg:flex w-full h-[90px] items-center z-50 bg-white">
       <div className="relative flex gap-8 items-center w-full max-w-[1200px] mx-auto px-4">
         <a href="/">
           <img alt="فروشگاه اینترنتی دسترسی" className="w-24 h-10" src={Image1} />
@@ -11,14 +11,15 @@ const TopHeader = () => {
 
         <div className="relative" id="main-search">
           <div className="hidden md:flex bg-gray items-center justify-center pr-2 rounded-xl shadow">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#bababa" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M22 22L20 20" stroke="#bababa" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-            </svg>
+          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+  <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
+  <g id="SVGRepo_iconCarrier">
+    <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#bababa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M22 22L20 20" stroke="#bababa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </g>
+</svg>
+
             <input
               className="w-64 md:w-72 lg:w-80 h-10 bg-transparent pr-2 outline-none text-gray max-w-full"
               id="search-decoy"
@@ -33,7 +34,7 @@ const TopHeader = () => {
             <a className="px-3 py-2 text-sm text-gray-light hover-icon" href="/contact">ارتباط ما</a>
             <a className="px-3 py-2 text-sm text-gray-light hover-icon" href="/about">درباره ما</a>
 
-    <div className="indicator flex xl:mr-[180px]  ">
+    <div className="indicator flex xl:mr-44">
         <div tabIndex={0} role="button" className="btn btn-mine relative ml-2.5">
                 <svg width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="#FE5F55">
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
